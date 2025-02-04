@@ -10,7 +10,8 @@ body {
 main {
     padding: 24px;
 }
-a{
+
+a {
     text-decoration-line: none;
     color: inherit;
 }
@@ -45,18 +46,20 @@ a{
 }
 
 
-.country-card{
+.country-card {
     overflow: hidden;
     width: 250px;
+    /* height: 330px; */
     border-radius: 4px;
     box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.2);
     padding-bottom: 24px;
     display: inline-block;
     transition: all transform 0.2s ease-in-out;
 }
-.country-card:hover{
-transform: scale(1.05);
-box-shadow: 0 0 16px 0px rgba(0, 0, 0, 0.2);
+
+.country-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 .card-text {
@@ -74,4 +77,57 @@ box-shadow: 0 0 16px 0px rgba(0, 0, 0, 0.2);
 
 .country-card img {
     width: 100%;
+
+}
+
+.main-container {
+    padding: 24px;
+    max-width: 1280px;
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 24px
+}
+
+.country-flag {
+    width: 400px;
+    /* height: 500px; */
+}
+
+.country-flag img {
+    width: 100%;
+    /* height: 100%; */
+}
+
+.country-Details {
+    display: flex;
+    justify-content: space-between;
+    gap: 66px;
+}
+
+.country-Details p {
+    margin-block: 12px;
+    font-size: 12px;
+}
+
+.border-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    align-items: center;
+    gap: 16px;
+    font-size: 12px;
+}
+
+
+.border-country {
+   
+    box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.2);
+    padding-inline: 16px;
+    /* padding: 8px; */
+    display: inline-block;
+    margin: 5px;
+    border-radius: 5px;
+ 
 }
