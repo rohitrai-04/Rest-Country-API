@@ -14,7 +14,7 @@ fetch('https://restcountries.com/v3.1/all').then((res) => res.json())
                 <h3 class="card-title">${country.name.common}</h3>
                 <p><b>Population: </b>${country.population.toLocaleString('en-IN')}</p>
                 <p><b>Region: </b>${country.region}</p>
-                <p><b>Capital: </b> ${country.capital}</p>
+                <p><b>Capital: </b> ${country.capital?.[0]}</p>
             </div>
          `
             countryContainer.append(countryCard)

@@ -122,12 +122,39 @@ a {
 
 
 .border-country {
-   
+
     box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.2);
     padding-inline: 16px;
-    /* padding: 8px; */
-    display: inline-block;
     margin: 5px;
     border-radius: 5px;
- 
+
+}
+
+@media(max-width: 768px) {
+    .countries-container {
+        justify-content: center;
+    }
+
+    .header-content {
+        font-size: 8px;
+    }
+
+    .main-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .country-Details {
+        flex-direction: column;
+        /* justify-content: center; */
+        gap: 0;
+    }
+
+    .country-flag {
+        width: 300px;
+    }
+
+    .border-details {
+        flex-direction: column;
+    }
 }
